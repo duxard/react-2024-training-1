@@ -1,9 +1,7 @@
-import {useState} from "react";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Job = ({ job }) => {
-
-
-
     const [showFullDescription, setShowFullDescription] = useState(false);
 
     let description = job.description;
@@ -20,7 +18,7 @@ const Job = ({ job }) => {
                 { showFullDescription ? 'Less' : 'More' }
             </button>
             <p>Location: {job.location}</p>
-            <a href={`/jobs/${job.id}`}>Read more</a>
+            <NavLink to={`/jobs/${job.id}`}>Read more</NavLink>
             <hr/>
         </section>
 
