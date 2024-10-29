@@ -18,7 +18,9 @@ const Job = ({ job }) => {
                 { showFullDescription ? 'Less' : 'More' }
             </button>
             <p>Location: {job.location}</p>
-            <NavLink to={`/jobs/${job.id}`}>Read more</NavLink>
+            <NavLink style={{"background-color": "yellow"}} to={`/jobs/${job.id}`}>Read more</NavLink>
+            <br/>
+            <NavLink style={{"background-color": "blue"}} to={`/jobsloader/${job.id}`}>Read more</NavLink>
             <hr/>
         </section>
 
