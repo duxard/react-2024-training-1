@@ -14,13 +14,13 @@ const Job = ({ job }) => {
         <section>
             <p>Title: {job.title}</p>
             <p>{description}</p>
-            <button onClick={() => setShowFullDescription((prevState) => !prevState)}>
+            <button onClick={() => setShowFullDescription((prevState) => !prevState)} style={{color: "limegreen"}}>
                 { showFullDescription ? 'Less' : 'More' }
             </button>
             <p>Location: {job.location}</p>
-            <NavLink style={{"background-color": "yellow"}} to={`/jobs/${job.id}`}>Read more</NavLink>
+            <NavLink style={{backgroundColor: "yellow"}} to={`/jobs/${job.id}`}>Read more (+delete option)</NavLink>
             <br/>
-            <NavLink style={{"background-color": "blue"}} to={`/jobsloader/${job.id}`}>Read more</NavLink>
+            <NavLink style={{backgroundColor: "lightblue"}} to={`/jobsloader/${job.id}`}>Read more (+edit option)</NavLink>
             <hr/>
         </section>
 

@@ -1,0 +1,7 @@
+.add-job label {
+    display: block;
+}
+
+.add-job__input {
+    border: 1px solid black;
+}
